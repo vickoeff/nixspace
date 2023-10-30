@@ -28,6 +28,8 @@
      xclip
      waybar
      swww
+     # Another apps
+     vlc
    ];
 
    programs.waybar = {
