@@ -27,6 +27,7 @@
    home.packages = with pkgs; [
      xclip
      waybar
+     brightnessctl
      swww
      # Another apps
      vlc

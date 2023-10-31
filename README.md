@@ -19,6 +19,9 @@ NixOs configurations includes pkgs config and home profile
 - Before using swww cli, you must init first. Just run: `swww init`
 - Change wallpaper, `swww img <img-path>`
 
+### Brightnessctl
+- To set brightness you can run this cli: `brightnessctl set [0-100]`
+
 ### Cloudflare WARP
 
 - Before run the cloudflare WARP, you must run the daemon: `sudo warp-svc`
