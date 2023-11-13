@@ -37,8 +37,8 @@
     enable = true;
     settings = {
       mainBar = {
-        layer = "bottom";
-        position = "bottom";
+        layer = "top";
+        position = "top";
         height = 30;
         output = [
           "eDP-1"

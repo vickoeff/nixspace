@@ -10,7 +10,6 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      # ../pkgs/cloudflare-warp/cloudflare-warp.nix
     ];
 
   # Bootloader.
@@ -133,15 +132,8 @@ in
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
     google-chrome
-    whatsapp-for-linux
     cloudflare-warp
   ];
-
-  # cloudflare WARP
-  # services.cloudflare-warp = {
-    # enable = true;
-    # certificate = ../pkgs/cloudflare-warp/Cloudflare_CA.pem;
-  # };
 
   # Enable Hyprland
   programs.hyprland = {
@@ -164,6 +156,13 @@ in
       #type database  DBuser  auth-method
       local all       all     trust
     '';
+  };
+
+  # Docker
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
   };
 
   programs.git = {
